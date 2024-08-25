@@ -5,7 +5,7 @@ import { Home } from './pages/home/Home';
 import FestivalDetails from './pages/FestivalDetails';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import Blog from './pages/FestivalDetails'; // Importujte Blog komponentu
+import Blog from './pages/Blog'; // Importujte Blog komponentu
 import { AuthProvider } from './context/AuthContext';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="festivalinfo" element={<FestivalDetails />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="blog" element={<Blog />} /> {/* Dodajte rutu za Blog */}
+            <Route path="blog" element={<Blog />} />
           </Route>
           <Route path="/login" element={<Login />} />
         </Routes>

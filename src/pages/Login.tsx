@@ -71,7 +71,7 @@ const Login: React.FC = () => {
           <div className="flex items-center justify-between mb-4">
             <button
               type="submit"
-              className="w-full bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors duration-300"
+              className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors duration-300"
             >
               {isRegister ? 'Sign Up' : 'Log In'}
             </button>
