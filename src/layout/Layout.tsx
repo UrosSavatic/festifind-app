@@ -4,14 +4,14 @@ import { Footer } from "./footer/Footer";
 
 const Layout = () => {
   return (
-    <div className="min-h-screen flex flex-col"> 
-      <Navbar />
+    <div className="min-h-screen flex flex-col">
+      <Navbar /> {/* Navigacioni bar */}
       <main className="flex-grow">
-        <Outlet />
+        <Outlet /> {/* Ovo će prikazivati sadržaj ruta */}
       </main>
-      <Footer />
+      <Footer /> {/* Podnožje */}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
