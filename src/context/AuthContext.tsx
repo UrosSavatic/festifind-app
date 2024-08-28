@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext, ReactNode } from 'react';
 interface AuthContextType {
   user: string | null;
   setUser: (user: string | null) => void;
-  logout: () => void; // Dodajte funkciju za odjavu
+  logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -12,7 +12,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [user, setUser] = useState<string | null>(null);
 
   const logout = () => {
-    setUser(null); // Postavite korisnika na null kada se odjavi
+    setUser(null);
   };
 
   return (
@@ -25,7 +25,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    throw new Error('Greska!');
   }
   return context;
 };

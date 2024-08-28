@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { MusicalNoteIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import { Link } from "react-router-dom";
-import { useAuth } from '../../context/AuthContext'; // Importujte useAuth
+import { useAuth } from '../../context/AuthContext'; 
 
 const Header = () => {
-  const { user, logout } = useAuth(); // Koristite useAuth za pristup korisniku i funkciji logout
+  const { user, logout } = useAuth();
   const [open, setOpen] = useState(false);
 
   const Links = [
@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-50'>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-        <Link to='/'>
+        <Link to='/' onClick={window.location.reload}>
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
             <MusicalNoteIcon className='w-7 h-7 text-blue-600'/>
             <span>FestiFind</span>

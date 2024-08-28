@@ -5,17 +5,17 @@ import { Home } from './pages/home/Home';
 import FestivalDetails from './pages/FestivalDetails';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import Blog from './pages/Blog'; // Importujte Blog komponentu
+import Blog from './pages/Blog';
 import { AuthProvider } from './context/AuthContext';
 
 function App() {
 
   useEffect(() => {
-    // Dodajte vaš useEffect kod ovde ako je potrebno
+    
   }, []);
 
   return (
-    <AuthProvider> {/* Obuhvatite celu aplikaciju sa AuthProvider */}
+    <AuthProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>

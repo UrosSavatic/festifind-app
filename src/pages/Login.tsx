@@ -14,24 +14,18 @@ const Login: React.FC = () => {
     console.log('Email:', email, 'Password:', password);
 
     if (isRegister) {
-      // Logika za registraciju korisnika
       console.log('Registering user...');
-      
-      // Pretpostavimo da je registracija uspešna
       setUser(email);
-      navigate('/'); // Preusmeravanje na home stranicu
+      navigate('/'); 
     } else {
-      // Logika za logovanje korisnika
       console.log('Logging in user...');
       setUser(email);
-      navigate('/'); // Preusmeravanje na home stranicu
+      navigate('/');
     }
   };
 
   return (
-    <div
-      className="flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-300 to-white"
-    >
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-300 to-white">
       <div className="w-full max-w-md bg-white bg-opacity-80 p-8 rounded-xl shadow-lg">
         <h2 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">
           {isRegister ? 'Create an Account' : 'Welcome Back'}

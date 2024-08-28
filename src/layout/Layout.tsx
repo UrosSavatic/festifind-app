@@ -5,11 +5,11 @@ import { Footer } from "./footer/Footer";
 const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar /> {/* Navigacioni bar */}
+      <Navbar />
       <main className="flex-grow">
-        <Outlet /> {/* Ovo će prikazivati sadržaj ruta */}
+        <Outlet />
       </main>
-      <Footer /> {/* Podnožje */}
+      <Footer />
     </div>
   );
 };
